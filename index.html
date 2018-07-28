@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+<header>
+	
+	<nav>
+		<ol>
+			<li><a href="/index.html"> Home</a></li>
+			<li><a href="/courses.html"> Courses</a></li>
+			<li><a href="/contact.html"> CONTACT</a></li>
+			<li><a href="/about.html">About us</a></li>
+		</ol>
+	</nav>
+		<h1 style="padding-top: 0;">Home</h1>
+</header>
+<section id="main">
+	<h1>hello</h1>
+	<div class="login-form">
+	<form action="/api/login" method="POST" id="loginform">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username"/></br></br>
+		<label>Password</label>
+		<input type="password" name="password"/></br>
+		<input type="checkbox" name="remember">
+          </br>
+          <label>I Agree</label>
+          </br>
+          <input type="submit" name="login" value="Login">
+          <input type="reset" name="resetbutton" value="Cancel">
+	</form>
+</div>
+<div id="results">
+	<button id="togglebutton">Hide</button>
+<div id="resultList">
+	Here comes the result.
+</div>
+</div>
+</section>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
